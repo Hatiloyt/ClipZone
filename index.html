@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Hochladen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Video hochladen</h2>
+        <!-- Form für den Upload -->
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="video-upload" class="upload-label">Video auswählen</label>
+            <input type="file" id="video-upload" name="video-upload" accept="video/*" required>
+            <br>
+            <button type="submit">Hochladen</button>
+        </form>
+    </div>
+</body>
+</html>
